@@ -9,6 +9,7 @@ import Layout from './component/Layout.jsx'
 import Home from './component/Home.jsx'
 import Register from './component/Register.jsx'
 import About from './component/About/About.jsx'
+import FeedbackForm from './component/FeedbackForm.jsx'
 
 
 const router=createBrowserRouter([
@@ -31,6 +32,9 @@ const router=createBrowserRouter([
       {
         path:'about',
         element:<About />
+      },{
+        path:'feedback',
+        element:<FeedbackForm/>
       }
     ]
   }
