@@ -102,7 +102,7 @@ function Home() {
          <button
          onClick={handleSubmits}
          type="button"
-         className="bg-red-600 text black w-30 h-10 ml-2"
+         className="bg-red-600 text black w-30 h-10 ml-2 hover:cursor-pointer"
          > Get Started</button>
       </div>
   </div>

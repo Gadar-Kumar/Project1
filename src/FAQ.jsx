@@ -38,7 +38,7 @@ const FAQ = () => {
           <div key={index} className="border border-gray-200 rounded-xl">
             <button
               onClick={() => toggle(index)}
-              className="w-full text-left p-4 flex justify-between items-center bg-white rounded-xl hover:bg-gray-200 transition"
+              className="w-full text-left p-4 flex justify-between items-center bg-white rounded-xl hover:bg-gray-200 transition hover:cursor-pointer"
             >
               <span className="font-medium text-gray-800">{item.question}</span>
               <span className="text-xl">{activeIndex === index ? "-" : "+"}</span>
