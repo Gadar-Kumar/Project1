@@ -39,11 +39,12 @@ function Home() {
       autoplay={{ delay: 4000, disableOnInteraction: false }}
       loop={true}
       slidesPerView={1}
+     
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="w-screen h-200 bg-cover bg-center ml-50 flex items-center justify-center text-center bg-gray-300"
+            className=" mx-auto max-w-screen-3xl bg-cover bg-center ml-50 flex items-center justify-center text-center bg-gray-100 h-300"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className=" bg-black/40  " />
@@ -56,9 +57,9 @@ function Home() {
       ))}
     </Swiper>
 
-    <div className="h-110 flex w-screen mt-0 ">
-      <div className="container flex justify-center items-center bg-gray-600">
-        <div className="flex h-95 mb-3 w-90  bg-cover m-3 mt-10 ml-0 rounded-3xl bg-gray-600 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
+    <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
+      <div className="container flex justify-center items-center bg-gray-100">
+        <div className="flex h-95 mb-3 w-90  bg-cover m-3 mt-10 ml-0 rounded-3xl bg-gray-100 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
         style={{
           backgroundImage:`url(${bgImg})`
         }}
@@ -93,16 +94,16 @@ function Home() {
     </div>
 
 
-<div className="w-screen h-170 bg-gray-600 mt-0   ">
+<div className="mx-auto max-w-screen-xl bg-gray-100 h-150 ">
   <FAQ/>
-        <div className="w-180 ml-100 rounded-2xl  h-10 text-white  flex justify-center mt-6 ">
+        <div className="w-180 ml-60 rounded-2xl  h-10 text-black  flex justify-center mt-3  ">
         <p className="font bold text-2xl  h-10 w-180">Ready To Explore And Relax Your Mind</p>
       </div>
-      <div className="mt-3">
+      <div className="mt-3 flex justify-center mr-30 ">
          <button
          onClick={handleSubmits}
          type="button"
-         className="bg-red-600 text black w-30 h-10 ml-2 hover:cursor-pointer"
+         className="bg-red-600 text black  w-30 h-10 ml-2 hover:cursor-pointer  "
          > Get Started</button>
       </div>
   </div>
@@ -110,14 +111,18 @@ function Home() {
 
 
 
-    <div className="container mx-auto p-4 bg-gray-600 w-screen">
-      <h2 className="text-2xl font-bold mb-4">Thanks for visiting our website</h2>
-      <p className="text-white">
-        We are dedicated to providing the best services for your needs. Explore our website to learn more about what we offer.
-      </p>
-      <p>Give your <Link to='/feedback' className="text-blue-400">feedback</Link> </p>
+   <div className="max-w-screen-xl mx-auto h-30 bg-gray-100">
+    <div className="flex justify-center text-black font-semibold ">
+      <p className="mt-4 mr-30 ">Thanks For Visiting Our Website</p>
+    </div>
+    <div className="max-w-screen-2xl h-10 p-1 mt-2">
+      <p>Give Your <Link 
+      to='/feedback'
+      className="text-blue-500 mr-30 font-extralight "
+      >Feedback</Link></p>
     </div>
 
+   </div>
     
 
     </>
