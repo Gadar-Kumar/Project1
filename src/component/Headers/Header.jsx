@@ -1,0 +1,42 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Login from '../Login'
+
+function Header() {
+  return (
+   
+      <header className='bg-gray-500 p-4 w-full  rounded-t-2xl'>
+        <div className='container mx-auto flex justify-between items-center w-100vw'>
+          
+          <nav>
+            <ul className='flex space-x-4'>
+                <li>
+                    <Link to='/' 
+                    className='text-gray-300 hover:text-white'>
+                        Home
+                    </Link>
+                </li>
+              <li>
+                <Link to='/login' 
+                className='text-gray-300 hover:text-white'>
+                 login
+                </Link>
+              </li>
+               <li>
+                <Link to='/about' 
+                className='text-gray-300 hover:text-orange-400'>
+                 About
+                </Link>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+   
+  )
+}
+
+
+
+export default Header
