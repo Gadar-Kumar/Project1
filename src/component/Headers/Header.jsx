@@ -5,7 +5,7 @@ import Login from '../Login'
 function Header() {
   return (
    
-      <header className='bg-gray-500 p-4 w-full  rounded-t-2xl'>
+      <header className='bg-gray-500 p-4 w-screen  rounded-t-2xl'>
         <div className='container mx-auto flex justify-between items-center w-100vw'>
           
           <nav>

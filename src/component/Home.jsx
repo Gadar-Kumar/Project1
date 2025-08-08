@@ -5,6 +5,7 @@ import { Link } from "react-router"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
+import FAQ from "../FAQ";
 
 const slides = [
   {
@@ -37,7 +38,7 @@ function Home() {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="w-screen h-200 bg-cover bg-center relative flex items-center justify-start text-center"
+            className="w-screen h-200 bg-cover bg-center ml-50 flex items-center justify-center text-center bg-gray-300"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className=" bg-black/40  " />
@@ -50,9 +51,9 @@ function Home() {
       ))}
     </Swiper>
 
-    <div className="h-110 flex w-full mt-10 ">
-      <div className="container flex justify-center items-center bg-white">
-        <div className="flex h-full w-90  bg-cover m-3 ml-0 rounded-3xl bg-gray-600 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
+    <div className="h-110 flex w-screen mt-0 ">
+      <div className="container flex justify-center items-center bg-gray-300">
+        <div className="flex h-95 mb-3 w-90  bg-cover m-3 mt-10 ml-0 rounded-3xl bg-gray-600 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
         style={{
           backgroundImage:`url(${bgImg})`
         }}
@@ -75,20 +76,20 @@ function Home() {
         </div>
 
 
-        <div className="container flex justify-center items-center rounded-2xl opacity-80 bg-gray-600 h-full w-90 m-3 bg-cover hover:bg-amber-500 translate-z-1 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 "
+        <div className="container flex justify-center items-center rounded-2xl opacity-80 bg-gray-600  h-95 mb-3 mt-10 w-90 m-3 bg-cover hover:bg-amber-500 translate-z-1 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 "
         style={{backgroundImage:`url(${bgImg1})`}}
         >
           hello
         </div>
-        <div className="container flex w-90 h-full opacity-100 bg-gray-600 m-3 rounded-2xl bg-cover hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110  hover:rotate-x-6 transform"
+        <div className="container flex w-90  h-95 mb-3 mt-10 opacity-100 bg-gray-600 m-3 rounded-2xl bg-cover hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110  hover:rotate-x-6 transform"
         style={{backgroundImage:`url(${bgImg2})`}}
         ></div>
       </div>
     </div>
 
 
-<div className="w-full h-150 bg-black mt-4 rounded-2xl">
-
+<div className="w-screen h-150 bg-gray-600 mt-0 rounded-b-2xl  ">
+  <FAQ/>
     </div>
 
     <div className="container mx-auto p-4">
