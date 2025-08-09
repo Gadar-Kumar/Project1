@@ -25,7 +25,7 @@ function FeedbackForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-4 border rounded">
+    <div className="max-w-md mx-auto mt-10 p-4  rounded h-100">
       <h2 className="text-xl font-bold mb-4">Feedback Form</h2>
       <form onSubmit={handleSubmit}>
         <textarea
@@ -45,12 +45,12 @@ function FeedbackForm() {
 
       {/* Show error or success message */}
       {error && <p className="text-red-600 mt-2">{error}</p>}
-      {success && <p className="text-green-600 mt-2">{success}
+      {success && <div className="text-green-600 mt-2">{success}
         <div>
             click to go to 
             <Link to='/' className="text-blue-500 font-bold text-md"> Home</Link>
         </div>
-        </p>}
+        </div>}
     </div>
   );
 }

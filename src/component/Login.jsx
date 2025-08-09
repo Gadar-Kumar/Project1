@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Link} from 'react-router-dom'
+import {data, Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 
@@ -8,7 +8,7 @@ function Login({children}) {
   const navigate=useNavigate();
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmits = (data) => {
     console.log('Form Data:', data);
     navigate('/');
   };
@@ -21,15 +21,19 @@ function Login({children}) {
   return (
     
     <div className='flex items-center justify-center h-screen bg-gray-100'>
-      <form action="/">
+      <div className='flex h-100 w-100 bg-gray-500 justify-center items-center text-center'>
+      <form  
+       action='/'
+      >
+      <p className='text-3xl text-white font-bold mb-3'>Log in</p>
         <div className='mb-4'>
           <label
-          htmlFor="email" className='block text-sm font-medium text-gray-700'>Email</label>
+          htmlFor="text" className='block text-sm font-medium text-gray-700'>Username</label>
             <input 
-            {...register('email', { required: true })}
+            {...register('text', { required: true })}
             value={username}
             onChange={(e)=>setUsername(e.target.value)}
-            type="email" id="email" className='mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 cursor:toggle' />
+            type="text" id="username" className='mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 cursor:toggle' />
           </div>
           <div className='mb-4'>
             <label htmlFor="password" className='block text-sm font-medium text-gray-700'>Password</label>
@@ -49,12 +53,6 @@ function Login({children}) {
           {showpass ? "🙈" : "👁️"}
         </button>
           </div>
-          <div className='mb-4'>
-            <label className='inline-flex items-center'>
-              <input type="checkbox" className='mr-2' />
-              Remember me
-            </label>
-          </div>
           <div
           className='mb-4'>
             <label className='block text-sm font-medium text-gray-700'>Don't have an account?
@@ -65,7 +63,7 @@ function Login({children}) {
           type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md'>Login</button>
         </form>
        
-
+      </div>
     </div>
   )
 }

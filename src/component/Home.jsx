@@ -28,7 +28,7 @@ function Home() {
 
 
   const handleSubmits=()=>{
-    navigate('/login')
+    navigate('/register')
   }
 
   return (
