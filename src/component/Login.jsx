@@ -60,7 +60,7 @@ function Login({children}) {
           </div>
           <button 
           onClick={handleSubmit}
-          type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md'>Login</button>
+          type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md cursor-pointer'>Login</button>
         </form>
        
       </div>
