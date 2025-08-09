@@ -43,7 +43,7 @@ function Register() {
               {showPassword ? "🙈" : "👁️"}
              </button>
             <label htmlFor="age" className='block text-sm font-medium text-gray-700'>Select your age</label>
-            <select name="age" id="age" className=' block w-full border border-gray-300 rounded-md shadow-sm p-2'>
+            <select name="age" id="age" className=' block w-full border border-gray-300 rounded-md shadow-sm p-2 cursor-pointer'>
               <option value="">Select your age</option>
               <option value="18-24">18-24</option>
               <option value="25-34">25-34</option>
@@ -57,7 +57,7 @@ function Register() {
             <label className='block text-sm font-thin mt-2 text-white'>Already have an account?
                <Link to="/login" className='text-blue-600 hover:underline'>Login</Link></label>
           </div>
-          <button type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md'>Register</button>
+          <button type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md cursor-pointer'>Register</button>
         </form>
     </div>
     </div>

@@ -23,7 +23,7 @@ function Home() {
   const navigate=useNavigate();
 
   const handleSubmit=()=>{
-    navigate('/login')
+    navigate('/content')
   }
 
 

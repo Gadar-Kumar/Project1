@@ -10,6 +10,7 @@ import Home from './component/Home.jsx'
 import Register from './component/Register.jsx'
 import About from './component/About/About.jsx'
 import FeedbackForm from './component/FeedbackForm.jsx'
+import Content from './component/contents/Content.jsx'
 
 
 const router=createBrowserRouter([
@@ -35,6 +36,9 @@ const router=createBrowserRouter([
       },{
         path:'feedback',
         element:<FeedbackForm/>
+      },{
+        path:'content',
+        element:<Content/>
       }
     ]
   }
