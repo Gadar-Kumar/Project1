@@ -26,6 +26,7 @@ function Home() {
     navigate('/content')
   }
 
+  
 
   const handleSubmits=()=>{
     navigate('/register')
@@ -59,26 +60,31 @@ function Home() {
 
     <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
       <div className="container flex justify-center items-center bg-gray-100">
-        <div className="flex h-95 mb-3 w-90  bg-cover m-3 mt-10 ml-0 rounded-3xl bg-gray-100 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
+        <div className=" h-95 mb-3 w-90  bg-cover m-3 mt-10 ml-0 rounded-3xl bg-gray-100 opacity-90 hover:bg-amber-500 transition duration-300 ease-in-out hover:-translate-y-3 hover:scale-110 " 
         style={{
           backgroundImage:`url(${bgImg})`
         }}
         >
-         
-          <h1 className="font-bold text-white m-1 text-3xl rounded-t-2xl">
+         <div className="w-full h-15 flex overflow-hidden">
+          <h1 className="font-extrabold text-white m-1 rounded-t-2xl text-xl">
             Reset Your Mind, Reclaim Your Peace
-            <p className="text-xl font-extrabold text-black mt-4">Mental health is the state of our emotional, psychological, and social well-being. It affects how we think, feel, and act. Good mental health helps us manage stress, connect with others, and make healthy decisions.
+            </h1>
+            </div>
+            <div className="h-57 w-full  overflow-hidden">
+            <p className="text-xl font-bold text-black mt-2 overflow-hidden">Mental health is the state of our emotional, psychological, and social well-being. It affects how we think, feel, and act. Good mental health helps us manage stress, connect with others, and make healthy decisions.
 
         </p>
+        </div> 
+        <div className="h-15 ">
           <button
           onClick={handleSubmit}
-          className="text-black w-30 font-light text-xl bg-red-500 h-10 bottom-2 mt-10  hover:text-blue-500 rounded-2xl hover:cursor-pointer"
+          className="text-black w-30 font-light text-xl bg-red-500 h-10 bottom-2 mt-2  hover:text-blue-500 rounded-2xl hover:cursor-pointer"
           type="button"
 
           >
             Know More
           </button>
-          </h1>     
+              </div>
         </div>
 
 

@@ -55,7 +55,7 @@ function Register() {
           </div>
           <div className='mb-4'>
             <label className='block text-sm font-thin mt-2 text-white'>Already have an account?
-               <Link to="/login" className='text-blue-600 hover:underline'>Login</Link></label>
+               <Link to="/login" className='text-green-400 hover:underline font-medium'> Login</Link></label>
           </div>
           <button type="submit" className='w-full bg-blue-600 text-white py-2 rounded-md cursor-pointer'>Register</button>
         </form>
