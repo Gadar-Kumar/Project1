@@ -6,12 +6,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
 import FAQ from "../FAQ";
+import myImage from "../assets/img3.jpg.jpg"
+import myImage1 from "../assets/img2.jpg.jpg"
+import myImage2 from "../assets/img4.jpg.jpg"
 
 const slides = [
+
   {
-    image: 'https://i.pinimg.com/1200x/9d/a7/65/9da7650ebf3e499c28551bcdcb9d52dc.jpg',
-    text: 'Mental Health Matter',
+    image:myImage1,
+    text:"",
   },
+  {
+    image:myImage,
+    text:"",
+  },
+  {
+    image:myImage2,
+    text:"",
+  }
+
 ];
 
 const bgImg='https://i.pinimg.com/1200x/a9/79/79/a97979c1721101d56dc238b72da20a9a.jpg'
@@ -34,7 +47,7 @@ function Home() {
 
   return (
     <>
-    
+    <div className="bg-gray-100">
     <Swiper
       modules={[Autoplay]}
       autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -45,7 +58,7 @@ function Home() {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className=" mx-auto max-w-screen-3xl bg-cover bg-center ml-50 flex items-center justify-center text-center bg-gray-100 h-300"
+            className=" mx-auto max-w-screen-3xl bg-cover bg-center  flex items-center justify-center text-center bg-gray-100 h-300"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className=" bg-black/40  " />
@@ -130,6 +143,7 @@ function Home() {
 
    </div>
     
+    </div>
 
     </>
   );
