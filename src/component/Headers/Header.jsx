@@ -8,8 +8,6 @@ function Header() {
       <header className='shadow sticky z-50 top-0 '>
           <nav className='bg-gray-100 border-gray-400 px-4 lg:px-6 py-2.5'>
         <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
-          
-        
             <ul className='flex space-x-4'>
                 <li>
                     <Link to='/' 
